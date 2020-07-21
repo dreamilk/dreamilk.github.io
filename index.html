@@ -204,6 +204,83 @@
             
 
   
+    <article id="post-sinGan简单使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/07/21/sinGan%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" target="_blank">sinGan简单使用</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/07/21/sinGan%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" class="archive-article-date">
+        <time datetime="2020-07-21T02:20:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h3 id="singan-官方源码"><a href="#singan-官方源码" class="headerlink" title="singan 官方源码"></a>singan 官方源码</h3><p><a href="https://github.com/tamarott/SinGAN" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN</a></p>
+<h3 id="singan-main-train-py"><a href="#singan-main-train-py" class="headerlink" title="singan main_train.py"></a>singan main_train.py</h3><p>python main_train.py  - - input_name mountains.jpg</p>
+<h3 id="random-samples-py"><a href="#random-samples-py" class="headerlink" title="random_samples.py"></a>random_samples.py</h3><p>如果产生随机样例，gen_start_scale 必须等于 0<br>如果生成任意尺度样例，gen_start_scale 必须 大于0</p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/07/21/sinGan%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-singan源码运行报错问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -854,84 +931,6 @@
     
     <p class="article-more-link">
       <a class="article-more-a" href="/2020/06/05/ssd%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95%E7%B2%BE%E8%AE%B2/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-下采样层与池化层" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/06/04/%E4%B8%8B%E9%87%87%E6%A0%B7%E5%B1%82%E4%B8%8E%E6%B1%A0%E5%8C%96%E5%B1%82/" target="_blank">下采样层与池化层</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/06/04/%E4%B8%8B%E9%87%87%E6%A0%B7%E5%B1%82%E4%B8%8E%E6%B1%A0%E5%8C%96%E5%B1%82/" class="archive-article-date">
-        <time datetime="2020-06-04T11:42:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-04</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="下采样层与池化层的关系及其作用"><a href="#下采样层与池化层的关系及其作用" class="headerlink" title="下采样层与池化层的关系及其作用"></a>下采样层与池化层的关系及其作用</h2><p>它们的作用似乎没有差别，在这个方面来说池化层可以理解为下采样层，就是一个东西，两个名字而已。<br>下面就他们在CNN中的位置、方法和作用作简要的说明。</p>
-<h3 id="位置"><a href="#位置" class="headerlink" title="位置"></a>位置</h3><p>池化或子采样层通常紧跟在CNN中的卷积层之后。</p>
-<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><p>最大值池化（max-pooling）：对邻域内特征点取最大值。<br>平均值池化（mean-pooling）：对邻域内特征点求平均。</p>
-<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><p>降维，减少网络要学习的参数数量。<br>防止过拟合。<br>可以扩大感知野。<br>可以实现不变性:平移不变性,旋转不变性,尺度不变性。</p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/06/04/%E4%B8%8B%E9%87%87%E6%A0%B7%E5%B1%82%E4%B8%8E%E6%B1%A0%E5%8C%96%E5%B1%82/">展开全文 >></a>
     </p>
     
 
