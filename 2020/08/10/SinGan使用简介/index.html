@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://dreamilk.github.io">
-  <title>sinGan简单使用 | Dreamilk</title>
+  <title>SinGan使用简介 | Dreamilk</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="singan 官方源码https:&#x2F;&#x2F;github.com&#x2F;tamarott&#x2F;SinGAN singan main_train.pypython main_train.py  - - input_name mountains.jpg random_samples.py如果产生随机样例，gen_start_scale 必须等于 0如果生成任意尺度样例，gen_start_scale 必须 大于0">
+  <meta name="description" content="SinGan使用详解1. 配置环境下载源码https:&#x2F;&#x2F;github.com&#x2F;tamarott&#x2F;SinGANpython&#x3D;&#x3D;3.6 torch&#x3D;&#x3D;1.4.0 torchvision&#x3D;&#x3D;0.5.0不要直接执行python -m pip install -r requirements.txt（该命令会安装最新版pytorch，与源码的pytorch版本不一致，导致出错）首先，pip install">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sinGan简单使用">
-<meta property="og:url" content="https://dreamilk.github.io/2020/07/21/sinGan%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:title" content="SinGan使用简介">
+<meta property="og:url" content="https://dreamilk.github.io/2020/08/10/SinGan%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B/index.html">
 <meta property="og:site_name" content="Dreamilk">
-<meta property="og:description" content="singan 官方源码https:&#x2F;&#x2F;github.com&#x2F;tamarott&#x2F;SinGAN singan main_train.pypython main_train.py  - - input_name mountains.jpg random_samples.py如果产生随机样例，gen_start_scale 必须等于 0如果生成任意尺度样例，gen_start_scale 必须 大于0">
+<meta property="og:description" content="SinGan使用详解1. 配置环境下载源码https:&#x2F;&#x2F;github.com&#x2F;tamarott&#x2F;SinGANpython&#x3D;&#x3D;3.6 torch&#x3D;&#x3D;1.4.0 torchvision&#x3D;&#x3D;0.5.0不要直接执行python -m pip install -r requirements.txt（该命令会安装最新版pytorch，与源码的pytorch版本不一致，导致出错）首先，pip install">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-07-21T02:20:46.000Z">
-<meta property="article:modified_time" content="2020-07-21T02:52:03.089Z">
+<meta property="article:published_time" content="2020-08-10T04:21:42.000Z">
+<meta property="article:modified_time" content="2020-08-10T04:22:26.998Z">
 <meta property="article:author" content="Dreamilk">
 <meta property="article:tag" content="deep learning">
 <meta property="article:tag" content=" computer vision">
@@ -201,22 +201,22 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-sinGan简单使用" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-SinGan使用简介" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      sinGan简单使用
+      SinGan使用简介
     </h1>
   
 
 
   
   
-<a href="/2020/07/21/sinGan%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-        <time datetime="2020-07-21T02:20:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
+<a href="/2020/08/10/SinGan%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B/" class="archive-article-date">
+        <time datetime="2020-08-10T04:21:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-10</time>
 </a>
 
   
@@ -229,7 +229,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">50字</span>
+      <span class="post-count">301字</span>
     </span>
   </span>
 
@@ -249,10 +249,15 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="singan-官方源码"><a href="#singan-官方源码" class="headerlink" title="singan 官方源码"></a>singan 官方源码</h3><p><a href="https://github.com/tamarott/SinGAN" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN</a></p>
-<h3 id="singan-main-train-py"><a href="#singan-main-train-py" class="headerlink" title="singan main_train.py"></a>singan main_train.py</h3><p>python main_train.py  - - input_name mountains.jpg</p>
-<h3 id="random-samples-py"><a href="#random-samples-py" class="headerlink" title="random_samples.py"></a>random_samples.py</h3><p>如果产生随机样例，gen_start_scale 必须等于 0<br>如果生成任意尺度样例，gen_start_scale 必须 大于0</p>
-
+    <h1 id="SinGan使用详解"><a href="#SinGan使用详解" class="headerlink" title="SinGan使用详解"></a>SinGan使用详解</h1><h2 id="1-配置环境"><a href="#1-配置环境" class="headerlink" title="1. 配置环境"></a>1. 配置环境</h2><p>下载源码<a href="https://github.com/tamarott/SinGAN" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN</a><br><strong>python==3.6 torch==1.4.0 torchvision==0.5.0</strong><br>不要直接执行<code>python -m pip install -r requirements.txt</code>（该命令会安装最新版pytorch，与源码的pytorch版本不一致，导致出错）<br>首先，<code>pip install torch==1.4.0 torchvision==0.5.0</code><br>linux系统下应该能够正确安装，windows系统下可能会报错，解决办法，指定下载包网址：<br><code>pip install torch===1.4.0 torchvision===0.5.0 -f https://download.pytorch.org/whl/torch_stable.html</code><br>然后，安装requirements.txt中要求的包<code>pip install -r requirements.txt</code><br>（问题参考：<a href="https://github.com/tamarott/SinGAN/issues/103）" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN/issues/103）</a></p>
+<h2 id="2-使用说明"><a href="#2-使用说明" class="headerlink" title="2.使用说明"></a>2.使用说明</h2><p>参考<a href="https://github.com/tamarott/SinGAN/blob/master/README.md" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN/blob/master/README.md</a><br>以下全在命令行输入执行<br>input_name 默认目录SinGan/Input/Images</p>
+<h3 id="Train"><a href="#Train" class="headerlink" title="Train"></a>Train</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python main_train.py --input_name &lt;input_file_name&gt;</span><br></pre></td></tr></table></figure>
+<p>命令行可输入python main_train.py<br>会出现参数提示，参数含义，参考<a href="https://github.com/tamarott/SinGAN/blob/master/config.py" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN/blob/master/config.py</a><br>源码默认min_size 25  max_size 250 </p>
+<h3 id="Random-samples"><a href="#Random-samples" class="headerlink" title="Random samples"></a>Random samples</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python random_samples.py --input_name &lt;training_image_file_name&gt; --mode random_samples --gen_start_scale &lt;generation start scale number&gt;</span><br></pre></td></tr></table></figure>
+<p>产生随机样例，gen_start_scale 必须等于 0</p>
+<h3 id="Random-samples-of-arbitrery-sizes"><a href="#Random-samples-of-arbitrery-sizes" class="headerlink" title="Random samples of arbitrery sizes"></a>Random samples of arbitrery sizes</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python random_samples.py --input_name &lt;training_image_file_name&gt; --mode random_samples_arbitrary_sizes --scale_h &lt;horizontal scaling factor&gt; --scale_v &lt;vertical scaling factor&gt;</span><br></pre></td></tr></table></figure>
+<p>生成任意尺度样例，gen_start_scale 必须 大于0</p>
+<h2 id="3-其他"><a href="#3-其他" class="headerlink" title="3.其他"></a>3.其他</h2>
     
 
     
@@ -298,7 +303,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://dreamilk.github.io/2020/07/21/sinGan简单使用/" title="sinGan简单使用" target="_blank">https://dreamilk.github.io/2020/07/21/sinGan简单使用/</a>
+          <a href="https://dreamilk.github.io/2020/08/10/SinGan使用简介/" title="SinGan使用简介" target="_blank">https://dreamilk.github.io/2020/08/10/SinGan使用简介/</a>
         </li>
         
         <li>
@@ -365,7 +370,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://dreamilk.github.io/2020/07/21/sinGan%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://dreamilk.github.io/2020/08/10/SinGan%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -379,6 +384,15 @@
 
 
 <nav id="article-nav">
+  
+    <a href="/2020/08/13/transfer-image-style/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          transfer image style
+        
+      </div>
+    </a>
   
   
     <a href="/2020/07/20/singan%E6%BA%90%E7%A0%81%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
@@ -580,7 +594,7 @@
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://zhousiwei.gitee.io/ibooks/" target="_blank" class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
+              <a href="https://github.com/dreamilk?tab=repositories" target="_blank" class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
                 
                   <img src="https://zhousiwei.gitee.io/ibooks/favicon.ico">
                 
@@ -589,7 +603,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://baidu.com" target="_blank" class="search-title" >
+              <a href="https://github.com/dreamilk?tab=repositories" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -598,7 +612,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://gitee.com/zhousiwei" target="_blank" class="search-title" >
+              <a href="https://github.com/dreamilk?tab=repositories" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -607,7 +621,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://www.jianshu.com/u/02cbf31a043a" target="_blank" class="search-title" >
+              <a href="https://github.com/dreamilk?tab=repositories" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -616,7 +630,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://blog.csdn.net/qq_30930805" target="_blank" class="search-title" >
+              <a href="https://github.com/dreamilk?tab=repositories" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -633,7 +647,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:1763443263<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme">学习方向：<br>图像处理、嵌入式人工智能<br> <br><br>联系QQ:1763443263<br><br> <br><br> <br></div>
   	  	
     	</section>
     

@@ -204,7 +204,7 @@
             
 
   
-    <article id="post-sinGan简单使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-transfer-image-style" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -212,7 +212,7 @@
   
     <h1 itemprop="name">
 	
-	  <a class="article-title" href="/2020/07/21/sinGan%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" target="_blank">sinGan简单使用</a>
+	  <a class="article-title" href="/2020/08/13/transfer-image-style/" target="_blank">transfer image style</a>
   
     </h1>
   
@@ -220,8 +220,8 @@
 
   
   
-<a href="/2020/07/21/sinGan%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-        <time datetime="2020-07-21T02:20:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-21</time>
+<a href="/2020/08/13/transfer-image-style/" class="archive-article-date">
+        <time datetime="2020-08-13T07:49:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-13</time>
 </a>
 
   
@@ -233,9 +233,18 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h3 id="singan-官方源码"><a href="#singan-官方源码" class="headerlink" title="singan 官方源码"></a>singan 官方源码</h3><p><a href="https://github.com/tamarott/SinGAN" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN</a></p>
-<h3 id="singan-main-train-py"><a href="#singan-main-train-py" class="headerlink" title="singan main_train.py"></a>singan main_train.py</h3><p>python main_train.py  - - input_name mountains.jpg</p>
-<h3 id="random-samples-py"><a href="#random-samples-py" class="headerlink" title="random_samples.py"></a>random_samples.py</h3><p>如果产生随机样例，gen_start_scale 必须等于 0<br>如果生成任意尺度样例，gen_start_scale 必须 大于0</p>
+    <h1 id="图像风格迁移程序"><a href="#图像风格迁移程序" class="headerlink" title="图像风格迁移程序"></a>图像风格迁移程序</h1><h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>开发环境：python 3.7<br>torch==1.6.0<br>torchvision==0.7.0<br>matplotlib==3.2.2<br>pygame==1.9.6<br>numpy==1.19.1<br>Pillow==7.2.0</p>
+<p>安装以上依赖包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+<h2 id="使用简介"><a href="#使用简介" class="headerlink" title="使用简介"></a>使用简介</h2><p>执行main.py 该文件是程序入口</p>
+<ol>
+<li>点击choose按钮  选择content_img和style_img</li>
+<li>epochs  控制训练次数，数值越大耗时越长</li>
+<li>size  生成图片的分辨率，格式必须类似 600:800 ，中间用:号隔开</li>
+<li>scale  控制content_img的占比，scale越大，与content_img越接近，当scale=100时，生成图像就是content_img，推荐scale=25。不同的scale与epochs会生成不一样的效果</li>
+<li>生成图片 默认保存在output文件夹下</li>
+<li>背景音乐 放在music/bg.mp3，可根据个人喜好，替换这个mp3文件，注意文件名必须相同</li>
+</ol>
 
     
 
@@ -251,7 +260,89 @@
 
     
     <p class="article-more-link">
-      <a class="article-more-a" href="/2020/07/21/sinGan%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/">展开全文 >></a>
+      <a class="article-more-a" href="/2020/08/13/transfer-image-style/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-SinGan使用简介" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/08/10/SinGan%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B/" target="_blank">SinGan使用简介</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/08/10/SinGan%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B/" class="archive-article-date">
+        <time datetime="2020-08-10T04:21:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-10</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="SinGan使用详解"><a href="#SinGan使用详解" class="headerlink" title="SinGan使用详解"></a>SinGan使用详解</h1><h2 id="1-配置环境"><a href="#1-配置环境" class="headerlink" title="1. 配置环境"></a>1. 配置环境</h2><p>下载源码<a href="https://github.com/tamarott/SinGAN" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN</a><br><strong>python==3.6 torch==1.4.0 torchvision==0.5.0</strong><br>不要直接执行<code>python -m pip install -r requirements.txt</code>（该命令会安装最新版pytorch，与源码的pytorch版本不一致，导致出错）<br>首先，<code>pip install torch==1.4.0 torchvision==0.5.0</code><br>linux系统下应该能够正确安装，windows系统下可能会报错，解决办法，指定下载包网址：<br><code>pip install torch===1.4.0 torchvision===0.5.0 -f https://download.pytorch.org/whl/torch_stable.html</code><br>然后，安装requirements.txt中要求的包<code>pip install -r requirements.txt</code><br>（问题参考：<a href="https://github.com/tamarott/SinGAN/issues/103）" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN/issues/103）</a></p>
+<h2 id="2-使用说明"><a href="#2-使用说明" class="headerlink" title="2.使用说明"></a>2.使用说明</h2><p>参考<a href="https://github.com/tamarott/SinGAN/blob/master/README.md" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN/blob/master/README.md</a><br>以下全在命令行输入执行<br>input_name 默认目录SinGan/Input/Images</p>
+<h3 id="Train"><a href="#Train" class="headerlink" title="Train"></a>Train</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python main_train.py --input_name &lt;input_file_name&gt;</span><br></pre></td></tr></table></figure>
+<p>命令行可输入python main_train.py<br>会出现参数提示，参数含义，参考<a href="https://github.com/tamarott/SinGAN/blob/master/config.py" target="_blank" rel="noopener">https://github.com/tamarott/SinGAN/blob/master/config.py</a><br>源码默认min_size 25  max_size 250 </p>
+<h3 id="Random-samples"><a href="#Random-samples" class="headerlink" title="Random samples"></a>Random samples</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python random_samples.py --input_name &lt;training_image_file_name&gt; --mode random_samples --gen_start_scale &lt;generation start scale number&gt;</span><br></pre></td></tr></table></figure>
+<p>产生随机样例，gen_start_scale 必须等于 0</p>
+<h3 id="Random-samples-of-arbitrery-sizes"><a href="#Random-samples-of-arbitrery-sizes" class="headerlink" title="Random samples of arbitrery sizes"></a>Random samples of arbitrery sizes</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python random_samples.py --input_name &lt;training_image_file_name&gt; --mode random_samples_arbitrary_sizes --scale_h &lt;horizontal scaling factor&gt; --scale_v &lt;vertical scaling factor&gt;</span><br></pre></td></tr></table></figure>
+<p>生成任意尺度样例，gen_start_scale 必须 大于0</p>
+<h2 id="3-其他"><a href="#3-其他" class="headerlink" title="3.其他"></a>3.其他</h2>
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/08/10/SinGan%E4%BD%BF%E7%94%A8%E7%AE%80%E4%BB%8B/">展开全文 >></a>
     </p>
     
 
@@ -885,81 +976,6 @@
 
 
   
-    <article id="post-ssd目标检测算法精讲" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2020/06/05/ssd%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95%E7%B2%BE%E8%AE%B2/" target="_blank">ssd目标检测算法精讲</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/2020/06/05/ssd%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95%E7%B2%BE%E8%AE%B2/" class="archive-article-date">
-        <time datetime="2020-06-05T13:50:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-05</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p><a href="https://blog.csdn.net/qq_41368247/article/details/88027340" target="_blank" rel="noopener">https://blog.csdn.net/qq_41368247/article/details/88027340</a></p>
-
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/06/05/ssd%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%AE%97%E6%B3%95%E7%B2%BE%E8%AE%B2/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1129,7 +1145,7 @@
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="https://zhousiwei.gitee.io/ibooks/" target="_blank" class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
+              <a href="https://github.com/dreamilk?tab=repositories" target="_blank" class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
                 
                   <img src="https://zhousiwei.gitee.io/ibooks/favicon.ico">
                 
@@ -1138,7 +1154,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://baidu.com" target="_blank" class="search-title" >
+              <a href="https://github.com/dreamilk?tab=repositories" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -1147,7 +1163,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://gitee.com/zhousiwei" target="_blank" class="search-title" >
+              <a href="https://github.com/dreamilk?tab=repositories" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -1156,7 +1172,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://www.jianshu.com/u/02cbf31a043a" target="_blank" class="search-title" >
+              <a href="https://github.com/dreamilk?tab=repositories" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -1165,7 +1181,7 @@
             </li>
           
             <li class="search-li">
-              <a href="https://blog.csdn.net/qq_30930805" target="_blank" class="search-title" >
+              <a href="https://github.com/dreamilk?tab=repositories" target="_blank" class="search-title" >
                 
                   <i class="icon-link icon"></i>
                 
@@ -1182,7 +1198,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:1763443263<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme">学习方向：<br>图像处理、嵌入式人工智能<br> <br><br>联系QQ:1763443263<br><br> <br><br> <br></div>
   	  	
     	</section>
     
