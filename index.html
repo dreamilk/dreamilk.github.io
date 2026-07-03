@@ -1,15 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>个人主页</title>
-    <script type="module" crossorigin src="/assets/index.f3b65758.js"></script>
-    <link rel="stylesheet" href="/assets/index.c6e01645.css">
-  </head>
-  <body>
-    <div id="app"></div>
-    
-  </body>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dreamilk 的个人 GitHub Pages：开源项目、技术栈与项目入口。" />
+  <title>Dreamilk · GitHub Projects</title>
+  <style>
+    :root{--bg:#0b1020;--card:#111832;--muted:#8da0c7;--text:#eef4ff;--line:#223052;--brand:#7dd3fc;--brand2:#a78bfa;--ok:#86efac}
+    *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans SC",Arial,sans-serif;background:radial-gradient(circle at 20% 0%,#1d2b55 0,#0b1020 38%,#070a13 100%);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{max-width:1080px;margin:0 auto;padding:56px 22px}.hero{padding:52px 0 34px}.eyebrow{color:var(--brand);font-weight:700;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(38px,7vw,78px);line-height:1.02;margin:14px 0}.hero p{max-width:760px;color:var(--muted);font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{border:1px solid var(--line);background:rgba(255,255,255,.06);padding:11px 16px;border-radius:999px;font-weight:700}.btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#07111f;border:0}.section{margin-top:34px}.section h2{font-size:28px;margin:0 0 14px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}.card{background:rgba(17,24,50,.76);border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 20px 60px rgba(0,0,0,.22);transition:.18s}.card:hover{transform:translateY(-3px);border-color:#3b82f6}.card h3{margin:0 0 8px;font-size:20px}.card p{margin:0 0 16px;color:var(--muted)}.tag{display:inline-block;font-size:12px;color:#dbeafe;background:rgba(125,211,252,.13);border:1px solid rgba(125,211,252,.26);border-radius:999px;padding:3px 9px;margin-right:6px}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:26px 0}.stat{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.04)}.stat b{font-size:26px;display:block}.stat span{color:var(--muted)}footer{margin-top:58px;padding-top:26px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="eyebrow">dreamilk.github.io</div>
+      <h1>Dreamilk 的开源项目主页</h1>
+      <p>这里整理我的 GitHub 项目入口，覆盖量化工具、Agent/CLI 工具、Go 后端、中间件、Kubernetes、C++ 学习与嵌入式 AI 等方向。</p>
+      <div class="actions">
+        <a class="btn primary" href="https://github.com/dreamilk">GitHub 主页</a>
+        <a class="btn" href="https://github.com/dreamilk/qstock">qstock</a>
+        <a class="btn" href="https://github.com/dreamilk/pateway-skill">pateway-skill</a>
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="stat"><b>29+</b><span>公开仓库</span></div>
+      <div class="stat"><b>Go / Python / C++</b><span>主要技术栈</span></div>
+      <div class="stat"><b>GitHub Pages</b><span>静态部署</span></div>
+    </div>
+
+    <section class="section">
+      <h2>重点项目</h2>
+      <div class="grid">
+        <a class="card" href="https://github.com/dreamilk/pateway-skill"><h3>pateway-skill</h3><p>PatewayAI 面板余额、用量、Key、日志、服务模式与模型查询 CLI / Agent 技能。</p><span class="tag">Python</span><span class="tag">Agent Tool</span></a>
+        <a class="card" href="https://github.com/dreamilk/qstock"><h3>qstock</h3><p>量化投研与行情分析工具项目。</p><span class="tag">Python</span><span class="tag">Quant</span></a>
+        <a class="card" href="https://github.com/dreamilk/go-cache"><h3>go-cache</h3><p>Go 语言内存缓存实现。</p><span class="tag">Go</span><span class="tag">Cache</span></a>
+        <a class="card" href="https://github.com/dreamilk/rpc_gateway"><h3>rpc_gateway</h3><p>HTTP POST/GET 到 gRPC 的网关实验项目。</p><span class="tag">Go</span><span class="tag">gRPC</span></a>
+        <a class="card" href="https://github.com/dreamilk/k8s"><h3>k8s</h3><p>Kubernetes 相关配置与实践项目。</p><span class="tag">Kubernetes</span><span class="tag">Infra</span></a>
+        <a class="card" href="https://github.com/dreamilk/ANN"><h3>ANN</h3><p>基于 C++ 的人工神经网络框架。</p><span class="tag">C++</span><span class="tag">AI</span></a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>更多方向</h2>
+      <div class="grid">
+        <a class="card" href="https://github.com/dreamilk/yolov5_for_rknn"><h3>yolov5_for_rknn</h3><p>YOLOv5 PyTorch → ONNX → RKNN 转换与部署。</p><span class="tag">Python</span><span class="tag">RKNN</span></a>
+        <a class="card" href="https://github.com/dreamilk/mystl"><h3>mystl</h3><p>简易 C++ 标准库实现。</p><span class="tag">C++</span><span class="tag">STL</span></a>
+        <a class="card" href="https://github.com/dreamilk/Data-Structure-and-Algorithm"><h3>Data Structure & Algorithm</h3><p>数据结构与算法学习仓库。</p><span class="tag">C++</span><span class="tag">Algorithm</span></a>
+      </div>
+    </section>
+
+    <footer>© 2026 Dreamilk · Built for GitHub Pages · <a href="https://github.com/dreamilk/dreamilk.github.io">Source</a></footer>
+  </main>
+</body>
 </html>
